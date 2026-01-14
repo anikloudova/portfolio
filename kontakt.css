@@ -1,0 +1,156 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #D1CCDC; background-color: #493548; }
+
+/* Navigace */
+header { background: #f4f4f4; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+nav a { text-decoration: none; color: #333; font-weight: bold; display: inline-block; transition: all 0.3s ease;}
+nav a.active { color: #ff00ff; border-bottom: 2px solid #ff00ff; }
+
+a:hover {
+  transform: scale(0.9);      
+  color: #ff00ff;             
+}
+
+h1{
+    text-align: center;
+  margin: 40px 0;
+  font-size: 40px;
+     font-weight: 850; /* Tohle vytvoří ten extra tučný nápis ze screenshotu */
+    letter-spacing: -1.5px; /* Mírné stažení písmen k sobě pro modernější vzhled */
+     color: #D1CCDC;
+
+}
+
+/* Sekce s formulářem */
+.contact-section {
+  background-color: #493548;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  max-width: 900px; /* Trochu širší pro elegantnější vzhled */
+  width: 100%;
+  text-align: center;
+}
+
+
+/* Mřížka formuláře */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px; /* Větší mezery pro vzdušnost */
+  margin-top: 50px;
+}
+
+/* Styl vstupních polí podle tvého obrázku */
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 18px;
+  background-color: transparent;
+  border: 1px solid #d4c4b5; /* Ta jemná hnědá linka */
+  border-radius: 15px; /* Výraznější zakulacení jako na screenu */
+  font-family: inherit;
+  font-size: 1rem;
+  color: #8b7355;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+/* Barva textu uvnitř políček (placeholder) */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #d4c4b5;
+}
+
+/* Efekt při kliknutí do políčka */
+.form-group input:focus, 
+.form-group textarea:focus {
+  border-color: #8b7355;
+}
+
+/* Políčko pro zprávu na celou šířku */
+.full-width {
+  grid-column: span 2;
+  margin-top: 10px;
+}
+
+/* Tlačítko Odeslat - přesně podle tvého obrázku */
+.submit-btn {
+  margin-top: 40px;
+  background-color: transparent;
+  border: 1px solid #d4c4b5;
+  color: #f4f4f4;
+  padding: 15px 80px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #f4f4f4; /* Velmi jemný nádech při najetí */
+  border-color: #8b7355;
+  color: #57886C;
+}
+
+
+
+/* Mobilní verze */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .full-width {
+    grid-column: span 1;
+  }
+}
+
+/* Styl pro samotný footer */
+.ftext{
+    color:#493548;
+}
+
+footer {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-info h3 {
+  color: #493548;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer-links {
+  margin: 20px 0;
+  color: #333;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ff00ff; 
+}
+
+.footer-bottom {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 30px;
+}

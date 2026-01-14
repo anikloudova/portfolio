@@ -1,0 +1,248 @@
+/* Základní reset a fonty */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #D1CCDC; background-color: #493548; }
+
+/* Navigace */
+header { background: #f4f4f4; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+nav a { text-decoration: none; color: #333; font-weight: bold; display: inline-block; transition: all 0.3s ease;}
+nav a.active { color: #ff00ff; border-bottom: 2px solid #ff00ff; }
+
+a:hover {
+  transform: scale(0.9);      
+  color: #ff00ff;             
+}
+
+/* Hero sekce */
+.hero-container {
+    height: calc(100vh - 100px); /* Odečte výšku menu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1200px;
+    position: relative;
+}
+
+/* Fotka uprostřed */
+.hero-image img {
+    width: 380px; /* Uprav podle potřeby */
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+/* Boční text vlevo */
+.hero-side-text {
+    font-weight: bold;
+    line-height: 1.2;
+    font-size: 1.1rem;
+    text-align: left;
+}
+
+/* Hlavní text vpravo */
+.hero-main-text h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    line-height: 1;
+    font-weight: 800;
+}
+
+.intro-text {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #D1CCDC;
+}
+
+/* Odkazy */
+.cta-link {
+    display: block;
+    text-decoration: none;
+    color: #B3FFB3;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+    margin-left: -30px;
+    
+   
+}
+
+.cta-link-pink {
+    text-decoration: none;
+    color: #B3FFB3;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+   
+}
+
+html {
+  scroll-behavior: smooth; /* Zajistí plynulé scrollování */
+}
+
+/* Layout sekce O mně pomocí Flexboxu pro snadné zarovnání */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  padding: 80px 10%;
+  background-color: #f4f4f4;
+
+  
+ 
+}
+
+h2{
+    color: #493548;
+}
+
+h4{
+   color: #ff00ff; 
+}
+
+.text{
+  color: #493548;
+  margin-left: 100px;  
+}
+.about-text {
+  flex: 1;
+   margin-top: 70px;
+}
+
+.about-image {
+  flex: 1;
+   margin-left: 310px; 
+}
+
+.about-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px; /* Jemné zaoblení jako na obrázku */
+  margin-top: 50px;
+}
+
+/* Zlaté tlačítko "TO CHCI!" */
+.btn-gold {
+  display: inline-block;
+  background-color: #57886C; 
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 50px;
+  margin-left: 100px;
+    border-radius: 9px;
+}
+
+.btn-gold:hover{
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+  color: #B3FFB3;
+  border-radius: 4px;
+}
+
+/* Responzivita pro mobil */
+
+@media (max-width: 900px) {
+    /* Hero sekce (Úvod) */
+    .hero-container {
+        height: auto; 
+        padding: 40px 20px;
+    }
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .hero-main-text h1 {
+        font-size: 2.5rem;
+    }
+    .hero-image img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .cta-link {
+        margin-left: 0; 
+    }
+
+    .about-container {
+        flex-direction: column; /* Text a obrázek pod sebe */
+        padding: 40px 5%;
+        text-align: center;
+    }
+
+    .about-text, .text {
+        margin-left: 0; 
+        width: 100%;
+    }
+
+    .about-image {
+        margin-left: 0; 
+        width: 100%;
+    }
+
+    .about-image img {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .btn-gold {
+        margin-left: 0; /* Vycentrování tlačítka */
+    }
+}
+
+.ftext{
+    color:#493548;
+}
+
+footer {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-info h3 {
+  color: #493548;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer-links {
+  margin: 20px 0;
+  color: #333;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ff00ff; 
+}
+
+.footer-bottom {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 30px;
+}

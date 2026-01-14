@@ -1,0 +1,161 @@
+/* Základní reset a fonty */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #493548; }
+
+/* Navigace */
+header { background: #f4f4f4; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+nav { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+nav a { text-decoration: none; color: #333; font-weight: bold; display: inline-block; transition: all 0.3s ease;}
+nav a.active { color: #ff00ff; border-bottom: 2px solid #ff00ff; }
+
+/* Stav po najetí myší */
+a:hover {
+  
+  transform: scale(0.9);      
+  color: #ff00ff;             
+}
+
+/* Nadpis stránky */
+h1 {
+  text-align: center;
+  margin: 40px 0;
+  font-size: 30px;
+    font-weight: 850; /* Tohle vytvoří ten extra tučný nápis ze screenshotu */
+    letter-spacing: -2px; /* Mírné stažení písmen k sobě pro modernější vzhled */
+    color: #D1CCDC;
+}
+
+h3{
+    font-size: 15px;
+}
+
+.projects-grid {
+  display: grid;
+  /* Zmenšíme šířku jedné karty (např. na 350px), aby se tři vešly vedle sebe */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 350px)); 
+  /* Vycentrování celé mřížky */
+  justify-content: center; 
+  /* Mezera mezi kartami */
+  gap: 25px; 
+  /* Zvětšíme maximální šířku, aby se tam 3 karty po 350px + mezery vešly */
+  max-width: 1200px; 
+  margin: 40px auto; 
+  padding: 0 20px;
+}
+
+/* Karta projektu - ujisti se, že šířka je 100% vzhledem ke sloupci mřížky */
+.project-card {
+  width: 100%;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Obrázek jako odkaz */
+.project-img-link img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Obrázek se nedeformuje */
+  display: block;
+}
+
+/* Info sekce pod obrázkem */
+.project-info {
+  padding: 20px;
+}
+
+.project-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.tech-tags {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tag {
+  background: #e9ecef;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.project-description, h3, h2{
+  color: #493548;
+}
+
+/* Responzivita pro mobil */
+@media (max-width: 450px) {
+  .projects-grid {
+    grid-template-columns: 1fr; /* Na mobilu jedna karta pod druhou */
+  }
+}
+
+html {
+  scroll-behavior: smooth; /* Plynulé odrolování nahoru */
+}
+
+.back-to-top {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-weight: bold;
+  border: 1px solid #f4f4f4;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 30s;
+}
+
+.back-to-top:hover {
+  background: #f4f4f4;
+  color: #f4f4f4;
+}
+
+.ftext{
+    color:#493548;
+}
+
+footer {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-info h3 {
+  color: #493548;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.footer-links {
+  margin: 20px 0;
+  color: #333;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #ff00ff; 
+}
+
+.footer-bottom {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 30px;
+}
