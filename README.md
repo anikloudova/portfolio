@@ -10,7 +10,7 @@ Toto portfolio prezentuje mou práci v oboru Multimediální komunikace. Obsahuj
 ### Postup nasazení
 Web je nasazen pomocí služby **GitHub Pages**. Zdrojové kódy jsou uloženy ve větvi `main`. Nasazení probíhá automaticky z kořenové složky repozitáře. HTTPS je aktivní.
 
-### Seznam zdrojů a licencí (Bod 5)
+### Seznam zdrojů a licencí
 * **Vlastní tvorba:** Všechny texty, grafika Argo Bags, autoportrét a kód.
 * **Školní projekty:** Fotografie pro Statek Kersko a Psí útulek.
 * **Ikony:** Font Awesome / vlastní vektory.
