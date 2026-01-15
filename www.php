@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Webové projekty</title>
+  <meta name="description" content="Osobní portfolio Anny Kloudové – ukázky webové a grafické tvorby.">
+  <link rel="stylesheet" href="www.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Úvod</a>
+      <a href="www.php" class="active">Webové projekty</a>
+      <a href="dim.php">Grafické projekty</a>
+      <a href="dalsi.php">Další projekty</a>
+      <a href="kontakt.php">Kontakt</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1>Webové projekty</h1>
+    
+    
+  <div class="projects-grid">
+    <article class="project-card">
+      <a href="https://anikloudova.github.io/Statek-Kersko/" target="_blank" rel="noopener" class="project-img-link"> <!--budou jeste doplneny odkazy -->
+        <img src="obrazky/staj.jpeg" alt="Stáj" loading="lazy">
+      </a>
+
+      <div class="project-info">
+        <h2>Statek Kersko</h2>
+        
+        <div class="project-meta">
+          <span>📅 Květen 2023</span>
+          <span>👤 Pro koho: Statek s koňmi</span>
+        </div>
+
+        <div class="project-description">
+          <p><strong>Účel:</strong> Cílem tohoto projektu bylo vytvořit moderní a přehlednou prezentaci rodinného statku. Web slouží jako hlavní informační uzel pro návštěvníky a klienty areálu. Obsahuje strukturovaný ceník služeb, galerii prostředí a kontakty.</p>
+          <p><strong>Má role:</strong> Programátor a designer </p>
+        </div>
+        
+        <h3>Použité technologie:</h3>
+        <div class="tech-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS Grid</span>
+        </div>
+      </div>
+    </article>
+
+     <article class="project-card">
+      <a href="https://anikloudova.github.io/Psi_utulek/" target="_blank" rel="noopener" class="project-img-link"> 
+        <img src="obrazky/pes.jpg" alt="Pes" loading="lazy">
+      </a>
+
+      <div class="project-info">
+        <h2>Šťastná tlapka</h2>
+        
+        <div class="project-meta">
+          <span>📅 Leden 2025</span>
+          <span>👤 Pro koho: Psí útulek</span>
+        </div>
+
+        <div class="project-description">
+          <p><strong>Účel:</strong> Tento projekt byl zaměřen na vytvoření přehledného a funkčního webu pro neziskovou organizaci. Hlavním cílem bylo vytvořit intuitivní galerii psů k adopci („Naši pejsci“) a jasný přehled poskytovaných služeb.</p>
+          <p><strong>Má role:</strong> Programátor a designer </p>
+        </div>
+
+        <h3>Použité technologie:</h3>
+        <div class="tech-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS Grid</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <a href="https://anikloudova.github.io/" target="_blank" rel="noopener" class="project-img-link"> <!--budou jeste doplneny odkazy -->
+        <img src="obrazky/hotelroom.jpeg" alt="Hotelový pokoj" loading="lazy">
+      </a>
+
+      <div class="project-info">
+        <h2>The Lunaz Prague</h2>
+        
+        <div class="project-meta">
+          <span>📅 Červen 2025</span>
+          <span>👤 Pro koho: Pražský hotel</span>
+        </div>
+
+        <div class="project-description">
+          <p><strong>Účel:</strong> Tento projekt byl zaměřen na vytvoření elegantní a funkční jednostránkové prezentace (One Page Web) pro fiktivní hotel. Hlavním cílem bylo skloubit luxusní vizuální styl s praktickými funkcemi pro zákazníky. Web obsahuje přehledný ceník, sekci s recenzemi hostů a plně funkční rezervační formulář.</p>
+          <p><strong>Má role:</strong> Programátor a designer </p>
+        </div>
+
+        <h3>Použité technologie:</h3>
+        <div class="tech-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS Grid</span>
+          <span class="tag">PHP</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+    </article>
+   
+  </div>
+  <div style="text-align: center; margin-top: 50px;">
+      <a href="#top" class="back-to-top">↑ Zpět na přehled</a>
+  </div>
+  </main>
+<footer>
+  <div class="footer-content">
+    <div class="footer-info">
+      <h3>Anna Kloudová</h3>
+      <div class="ftext"><p>Digitální designérka & studentka multimédií</p></div>
+    </div>
+    <div class="footer-links">
+      <a href="mailto:tvuj@email.cz">annakloudova@gmail.com</a>
+      <p>Tel: +420 790 677 532</p>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Anna Kloudová. Všechna práva vyhrazena.</p>
+    </div>
+  </div>
+  <div class="footer-counter">
+      <?php include 'counter.php'; ?>
+    </div>
+</footer>
+</body>
+</html>
